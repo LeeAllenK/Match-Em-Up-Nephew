@@ -1,42 +1,30 @@
-/******************************************
-/* CSS
-/*******************************************/
-
-/* Box Model Hack */
-*{
-  box-sizing: border-box;
-}
-
-/******************************************
-/* LAYOUT
-/*******************************************/
-BODY{
-  background-image: radial-gradient(circle at 29% 55%, rgb(0, 0, 0) 0%, hsla(329, 0%, 99%, 0.05) 4%, transparent 4%, transparent 44%, transparent 44%, transparent 100%), radial-gradient(circle at 85% 89%, hsla(329, 0%, 99%, 0.05) 0%,rgb(4, 0, 8) 51%, transparent 51%, transparent 52%, transparent 52%, transparent 100%), radial-gradient(circle at 6% 90%, hsla(329, 0%, 99%, 0.05) 0%, hsla(61, 95%, 47%, 0.05) 53%, transparent 53%, transparent 64%, transparent 64%, transparent 100%), radial-gradient(circle at 35% 75%,rgb(8, 8, 8) 0%, hsla(329, 0%, 99%, 0.05) 6%, transparent 6%, transparent 98%, transparent 98%, transparent 100%), radial-gradient(circle at 56% 75%, rgb(242, 240, 240) 0%, hsla(329, 0%, 99%, 0.05) 16%, transparent 16%, transparent 23%, transparent 23%, transparent 100%), radial-gradient(circle at 42% 0%,rgb(254, 254, 254) 0%, rgb(17, 17, 17) 3%, transparent 3%, transparent 26%, transparent 26%, transparent 100%), radial-gradient(circle at 29% 28%,rgb(254, 252, 252) 0%, hsla(329, 0%, 99%, 0.05) 51%, transparent 51%, transparent 75%, transparent 75%, transparent 100%), radial-gradient(circle at 77% 21%,rgb(255, 254, 254) 0%, hsla(329, 0%, 99%, 0.05) 35%, transparent 35%, transparent 55%, transparent 55%, transparent 100%), radial-gradient(circle at 65% 91%, rgb(8, 8, 8) 0%, hsla(329, 0%, 99%, 0.05) 46%, transparent 46%, transparent 76%, transparent 76%, transparent 100%), linear-gradient(45deg, rgb(5, 5, 5), rgb(4, 0, 8));
+BODY {
+  background-image: radial-gradient(circle at 29% 55%, rgb(0, 0, 0) 0%, hsla(329, 0%, 99%, 0.05) 4%, transparent 4%, transparent 44%, transparent 44%, transparent 100%), radial-gradient(circle at 85% 89%, hsla(329, 0%, 99%, 0.05) 0%, rgb(4, 0, 8) 51%, transparent 51%, transparent 52%, transparent 52%, transparent 100%), radial-gradient(circle at 6% 90%, hsla(329, 0%, 99%, 0.05) 0%, hsla(61, 95%, 47%, 0.05) 53%, transparent 53%, transparent 64%, transparent 64%, transparent 100%), radial-gradient(circle at 35% 75%, rgb(8, 8, 8) 0%, hsla(329, 0%, 99%, 0.05) 6%, transparent 6%, transparent 98%, transparent 98%, transparent 100%), radial-gradient(circle at 56% 75%, rgb(242, 240, 240) 0%, hsla(329, 0%, 99%, 0.05) 16%, transparent 16%, transparent 23%, transparent 23%, transparent 100%), radial-gradient(circle at 42% 0%, rgb(254, 254, 254) 0%, rgb(17, 17, 17) 3%, transparent 3%, transparent 26%, transparent 26%, transparent 100%), radial-gradient(circle at 29% 28%, rgb(254, 252, 252) 0%, hsla(329, 0%, 99%, 0.05) 51%, transparent 51%, transparent 75%, transparent 75%, transparent 100%), radial-gradient(circle at 77% 21%, rgb(255, 254, 254) 0%, hsla(329, 0%, 99%, 0.05) 35%, transparent 35%, transparent 55%, transparent 55%, transparent 100%), radial-gradient(circle at 65% 91%, rgb(8, 8, 8) 0%, hsla(329, 0%, 99%, 0.05) 46%, transparent 46%, transparent 76%, transparent 76%, transparent 100%), linear-gradient(45deg, rgb(5, 5, 5), rgb(4, 0, 8));
   min-height: 400px;
   padding: 20px;
   color: #DDDDDD;
   font-family: verdana;
 }
 
-h2{
-  /* display: flex; */
+h2 {
+
   flex-direction: row;
   color: rgb(9, 9, 9);
   justify-content: center;
 }
 
-h3{
+h3 {
   display: flex;
   color: rgb(251, 248, 248);
-   justify-content: center;
- 
+  justify-content: center;
+
 }
 
-form{
+form {
   display: flex;
-    color: rgb(8, 8, 8);
-    flex-direction: row;
-   
+  color: rgb(8, 8, 8);
+  flex-direction: row;
+
 }
 
 #result {
@@ -52,34 +40,35 @@ form{
 
 }
 
-@keyframes bounce{
-  from{
-      translate: 0px 10px 0px
+@keyframes bounce {
+  from {
+    translate: 0px 10px 0px
   }
-  to{
-      translate: 0px 30px 0px
+
+  to {
+    translate: 0px 30px 0px
   }
 }
 
-ul{
+ul {
   list-style-type: none;
 }
 
-.restart{
-   display: flex;
-   justify-content: flex-end;
-   color: rgb(13, 13, 14);
-   font-weight: bolder;
-      
+.restart {
+  display: flex;
+  justify-content: flex-end;
+  color: rgb(13, 13, 14);
+  font-weight: bolder;
+
 }
 
-#resetButton{
+#resetButton {
   color: rgb(3, 3, 3);
   background-color: rgb(247, 246, 246);
   font-weight: bolder;
 }
 
-#memory{
+#memory {
   display: flex;
   color: rgb(0, 0, 0);
   animation-direction: normal;
@@ -87,17 +76,17 @@ ul{
   font-size: xxx-large;
   font-weight: bolder;
   opacity: .79;
-      
+
 }
 
 #points {
-    list-style-type: none;
+  list-style-type: none;
 }
 
-#point{
+#point {
   display: flex;
   flex-direction: row;
- 
+
 }
 
 #score {
@@ -106,25 +95,26 @@ ul{
   font-weight: bolder;
 }
 
-#time{
- display: flex;
+#time {
+  display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 
 }
-#timer{
-    position: absolute;
-    color: rgb(250, 255, 250);
-    width: 200px;
-    height: 100px;
-    top: 50px;
-    left: 38px;
-    font-size: normal;
-    font-weight: bolder;
+
+#timer {
+  position: absolute;
+  color: rgb(250, 255, 250);
+  width: 200px;
+  height: 100px;
+  top: 50px;
+  left: 38px;
+  font-size: normal;
+  font-weight: bolder;
 }
 
 .base-timer__path-remaining {
-  color:  green;
+  color: green;
   /* Just as thick as the original ring */
   stroke-width: 20px;
 
@@ -189,9 +179,3 @@ ul{
   list-style-type: none;
 
 }
-
-img {
-  height: 100px;
-  width: 75px;
-}
-

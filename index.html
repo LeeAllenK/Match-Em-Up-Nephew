@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width , initial-scale=1.0">
+
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<ul>
+			<li  class=" restart"><button  id="resetButton" type="button" >RESTART</button></li>
+		</ul>
+
+		<ul id="gameHeader">
+			<li id="memory">Eli's Memory Game</li>
+			<li  id="result" ></li>
+		</ul>
+
+		<ul id="points">
+			<li hidden id="point"></li>
+			<li  id="score"></li>
+		</ul>
+
+		<div  hidden class="base-timer">
+			<svg class="base-timer__svg" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+			<g class="base-timer__circle">
+			<circle  class="base-timer__path-elapsed" cx="150" cy="150" r="100"></circle>
+			<path id="base-timer-path-remaining" stroke-dasharray="628 628" class="base-timer__path-remaining " 
+					d="
+			        	M 150, 60
+        				m 45, 180
+ 						a 100 100 0 0, 1 -90,0
+ 						a 100 100 0 1, 1 90,0"
+				></path>
+			</g>
+			</svg>
+			<span id="timer"></span>
+		</div>
+
+		<ul class="cards">
+			
+		</ul>
+
+		<form>
+			<input hidden name="button" id="start" type="button"  value="PLAY"/>
+				&ensp;
+			<input hidden name="button" id="pause" type="button"  value="Pause"/>
+		</form>
+	</body>
+		<script type="text/javascript" src="js/main.js"></script>
+</html>
