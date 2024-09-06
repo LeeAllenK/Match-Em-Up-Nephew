@@ -1,0 +1,197 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+BODY{
+  background-image: radial-gradient(circle at 29% 55%, rgb(0, 0, 0) 0%, hsla(329, 0%, 99%, 0.05) 4%, transparent 4%, transparent 44%, transparent 44%, transparent 100%), radial-gradient(circle at 85% 89%, hsla(329, 0%, 99%, 0.05) 0%,rgb(4, 0, 8) 51%, transparent 51%, transparent 52%, transparent 52%, transparent 100%), radial-gradient(circle at 6% 90%, hsla(329, 0%, 99%, 0.05) 0%, hsla(61, 95%, 47%, 0.05) 53%, transparent 53%, transparent 64%, transparent 64%, transparent 100%), radial-gradient(circle at 35% 75%,rgb(8, 8, 8) 0%, hsla(329, 0%, 99%, 0.05) 6%, transparent 6%, transparent 98%, transparent 98%, transparent 100%), radial-gradient(circle at 56% 75%, rgb(242, 240, 240) 0%, hsla(329, 0%, 99%, 0.05) 16%, transparent 16%, transparent 23%, transparent 23%, transparent 100%), radial-gradient(circle at 42% 0%,rgb(254, 254, 254) 0%, rgb(17, 17, 17) 3%, transparent 3%, transparent 26%, transparent 26%, transparent 100%), radial-gradient(circle at 29% 28%,rgb(254, 252, 252) 0%, hsla(329, 0%, 99%, 0.05) 51%, transparent 51%, transparent 75%, transparent 75%, transparent 100%), radial-gradient(circle at 77% 21%,rgb(255, 254, 254) 0%, hsla(329, 0%, 99%, 0.05) 35%, transparent 35%, transparent 55%, transparent 55%, transparent 100%), radial-gradient(circle at 65% 91%, rgb(8, 8, 8) 0%, hsla(329, 0%, 99%, 0.05) 46%, transparent 46%, transparent 76%, transparent 76%, transparent 100%), linear-gradient(45deg, rgb(5, 5, 5), rgb(4, 0, 8));
+  min-height: 400px;
+  padding: 20px;
+  color: #DDDDDD;
+  font-family: verdana;
+}
+
+h2{
+  /* display: flex; */
+  flex-direction: row;
+  color: rgb(9, 9, 9);
+  justify-content: center;
+}
+
+h3{
+  display: flex;
+  color: rgb(251, 248, 248);
+   justify-content: center;
+ 
+}
+
+form{
+  display: flex;
+    color: rgb(8, 8, 8);
+    flex-direction: row;
+   
+}
+
+#result {
+  display: flex;
+  justify-content: center;
+  color: rgb(249, 245, 245);
+  font-size: large;
+  font-weight: bolder;
+  animation: bounce .6s;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+  opacity: 1;
+
+}
+
+@keyframes bounce{
+  from{
+      translate: 0px 10px 0px
+  }
+  to{
+      translate: 0px 30px 0px
+  }
+}
+
+ul{
+  list-style-type: none;
+}
+
+.restart{
+   display: flex;
+   justify-content: flex-end;
+   color: rgb(13, 13, 14);
+   font-weight: bolder;
+      
+}
+
+#resetButton{
+  color: rgb(3, 3, 3);
+  background-color: rgb(247, 246, 246);
+  font-weight: bolder;
+}
+
+#memory{
+  display: flex;
+  color: rgb(0, 0, 0);
+  animation-direction: normal;
+  animation-iteration-count: 2;
+  font-size: xxx-large;
+  font-weight: bolder;
+  opacity: .79;
+      
+}
+
+#points {
+    list-style-type: none;
+}
+
+#point{
+  display: flex;
+  flex-direction: row;
+ 
+}
+
+#score {
+  color: rgb(8, 8, 8);
+  font-size: xxx-large;
+  font-weight: bolder;
+}
+
+#time{
+ display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+}
+#timer{
+    position: absolute;
+    color: rgb(250, 255, 250);
+    width: 200px;
+    height: 100px;
+    top: 50px;
+    left: 38px;
+    font-size: normal;
+    font-weight: bolder;
+}
+
+.base-timer__path-remaining {
+  color:  green;
+  /* Just as thick as the original ring */
+  stroke-width: 20px;
+
+  /* Rounds the line endings to create a seamless circle */
+  stroke-linecap: round;
+
+  /* Makes sure the animation starts at the top of the circle */
+  transform: rotate(90deg);
+  transform-origin: center;
+
+  /* One second aligns with the speed of the countdown timer */
+  transition: 1s linear all;
+
+  /* Allows the ring to change color when the color value updates */
+  stroke: currentColor;
+
+
+}
+
+.base-timer__svg {
+  /* Flips the svg and makes the animation to move left-to-right */
+  transform: scaleX(-1);
+
+}
+
+.base-timer {
+  position: relative;
+  height: 120px;
+  width: 120px;
+}
+
+/* Removes SVG styling that would hide the time label */
+.base-timer__circle {
+  fill: none;
+  stroke: red;
+}
+
+/* The SVG path that displays the timer's progress */
+.base-timer__path-elapsed {
+  stroke-width: 20px;
+  stroke: rgb(134, 130, 130);
+}
+
+.base-timer__path-remaining.green {
+  color: rgb(65, 184, 131);
+}
+
+.base-timer__path-remaining.orange {
+  color: orange;
+}
+
+.base-timer__path-remaining.red {
+  color: red;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  list-style-type: none;
+
+}
+
+img {
+  height: 100px;
+  width: 75px;
+}
+
