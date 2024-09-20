@@ -20,9 +20,7 @@ function login() {
 		game.style.display = 'block';
 		log.style.display = 'none';
 	}
-	if(document.body.style.backgroundImage){
-		console.log(document.body.style.backgroundImage)
-	}
+
 }
 
 let card1;

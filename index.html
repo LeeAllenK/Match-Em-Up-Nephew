@@ -7,12 +7,25 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
+	<div class="loginOuter">
+		<div class="loginBox">
+		<ul class="items">
+			<li class="log"><label for="username">UserName</label><br/></li>
+			<li class="log"><input type="text" id="user" name="user" required /><br/></li>
+			<li class="log"><label for="password">Password</label><br/></li>
+			<li class="log"><input type="text" id="password" name="password" required /><br/></li>
+			<li class="log"><button class="loginBtn" onclick="login()">Login</button></li>
+			<li class="log"><a  href="index.html" target="blank">Forgot Username/Password?</a></li>
+		</ul>
+		</div>
+	</div>
+	<div class="Game">
 		<ul>
 			<li  class=" restart"><button  id="resetButton" type="button" >RESTART</button></li>
 		</ul>
 
 		<ul id="gameHeader">
-			<li id="memory">Eli's Memory Game</li>
+			<li id="memory">Match Em Up Nephew</li>
 			<li  id="result" ></li>
 		</ul>
 
@@ -42,11 +55,11 @@
 		</ul>
 
 		<form>
-			<input hidden name="button" id="start" type="button"  value="PLAY"/>
+			<input class="button" hidden name="button" id="start" type="button"  value="PLAY"/>
 				&ensp;
-			<input hidden name="button" id="pause" type="button"  value="Pause"/>
+			<input class="button" hidden name="button" id="pause" type="button"  value="Pause"/>
 		</form>
-
+	</div>
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>
