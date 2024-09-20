@@ -5,17 +5,36 @@ const result = document.getElementById('result');
 const gameScore = document.getElementById('score');
 const pause = document.getElementById('pause');
 const restart = document.getElementById('resetButton');
+let log = document.querySelector('.loginOuter')
+let game = document.querySelector('.Game')
+
+let user = document.getElementById('user');
+let pw = document.getElementById('password');
+
+game.style.display = 'none';
+
+function login() {
+	u = user.value;
+	p = pw.value;
+	if(u === 'User@mail' && p === 'User') {
+		game.style.display = 'block';
+		log.style.display = 'none';
+	}
+	if(document.body.style.backgroundImage){
+		console.log(document.body.style.backgroundImage)
+	}
+}
 
 let card1;
 let card2;
 let score = 0;
-let mins = 10 ;
+let mins = 1 ;
 let time = mins * 60;
 let timer;
 // Initially, no time has passed, but this will count up
 // and subtract from the TIME_LIMIT
 let timePassed = 0;
-const TIME_LIMIT = 600;
+const TIME_LIMIT = 60;
 let timeLeft = TIME_LIMIT;
 
 const FULL_DASH_ARRAY = 628;
@@ -40,6 +59,7 @@ const COLOR_CODES = {
 	}
 };
 let remainingPathColor = COLOR_CODES.info.color;
+
 
 document.getElementById('start').addEventListener('click', startGame);
 async function shuffledDeck(){
@@ -92,17 +112,17 @@ async function startGame(){
 				document.querySelector('.base-timer').removeAttribute('hidden');
 				document.querySelector('button').hidden = false;
 
-			},2000)	
+			},1000)	
 		}
 
-		 timer = setInterval((formatTime),500)
+		 timer = setInterval((formatTime),100)
 			
 			document.getElementById('start').addEventListener('click',resume);
 			pause.addEventListener('click', pauseGame);
 			restart.addEventListener('click',resetGame);
 			
 	} catch(Err) {
-		console.error(Err)
+		return Err;
 	}
 }
 
@@ -251,5 +271,6 @@ function resume() {
 
 function resetGame(){
 	location.reload();
+	
 }
 
