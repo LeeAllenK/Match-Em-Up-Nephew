@@ -5,9 +5,9 @@ const result = document.getElementById('result');
 const gameScore = document.getElementById('score');
 const pause = document.getElementById('pause');
 const restart = document.getElementById('resetButton');
+
 let log = document.querySelector('.loginOuter')
 let game = document.querySelector('.Game')
-
 let user = document.getElementById('user');
 let pw = document.getElementById('password');
 
@@ -20,7 +20,6 @@ function login() {
 		game.style.display = 'block';
 		log.style.display = 'none';
 	}
-
 }
 
 let card1;
@@ -36,7 +35,6 @@ const TIME_LIMIT = 60;
 let timeLeft = TIME_LIMIT;
 
 const FULL_DASH_ARRAY = 628;
-
 
 // Warning occurs at 10s
 const WARNING_THRESHOLD = 30;
