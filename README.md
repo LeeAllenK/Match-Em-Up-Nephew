@@ -1,6 +1,7 @@
 <div id="header" >
  <h1  class="heading-element" dir="auto">Match Em Up Nephew</h1>
-Tech used: HTML, CSS, JavaScript
+  <h2 class="heading-element" dir="auto">Tech used:</h2> <h2>HTML, CSS, JavaScript</h2>
+
 </div>
 
 <div id="header" >
