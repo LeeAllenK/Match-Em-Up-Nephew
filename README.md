@@ -3,9 +3,10 @@
 Tech used: HTML, CSS, JavaScript
 </div>
 
-<div id="header">
- <h1<class="heading-element" dir="auto">How It's Made:</h1>
+<div id="header" >
+ <h1 class="heading-element" dir="auto">How It's Made:</h1>
 </div>
+
 
 <div id="header" >
  <h1 class="heading-element" dir="auto">Optimizations:</h1>
