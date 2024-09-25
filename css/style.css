@@ -1,21 +1,9 @@
 body{
 margin: 0;
 }
-.loginOuter{
-  display: flex;
-  justify-content: center;
-  font-family: serif;
-  font-weight: bolder;
-}
-.loginBtn{
-  cursor: pointer;
-}
+
 .items{
   border: 10px solid black;
-}
-
-.log {
-  padding: 5px;
 }
 
 a{
