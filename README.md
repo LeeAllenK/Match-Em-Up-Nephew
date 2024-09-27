@@ -4,7 +4,7 @@
 
 <div id="header" >
  <h1 class="heading-element" dir="auto">How It's Made:</h1>
- Tech used: HTML, CSS, JavaScript
+ Tech used: HTML, CSS, JavaScript <br/>
   My learning was focused on using Javascript fetch() API. In doing this I was able to render a deck of 52 standard cards,
   testing whether the cards or similar value are a match.
 </div>
