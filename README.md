@@ -1,5 +1,6 @@
 <div id="header" >
  <h1  class="heading-element" dir="auto">Match Em Up Nephew</h1>
+ Inspired by my nephew Eli test your memory in a popular card matching game. Using a standard deck of 52 cards match all similar card values before time runs out. Can you 'Match Em Up Nephew'.
 </div>
 
 <div id="header" >
