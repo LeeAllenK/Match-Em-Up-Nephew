@@ -13,7 +13,7 @@
 
 <div id="header" >
  <h1 class="heading-element" dir="auto">Optimizations:</h1>
-  When I improve this project, I would update the type of cards that could be chosen. I would focus on using React to build and React Native for a mobile approach.
+  When I improve this project, I would update the type of decks that can be chosen. I would focus on using React to build and React Native for a mobile approach.
 </div>
 
 <div id="header">
