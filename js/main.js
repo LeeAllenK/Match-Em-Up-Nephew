@@ -92,11 +92,11 @@ async function startGame(){
 				document.querySelector('.base-timer').removeAttribute('hidden');
 				document.querySelector('button').hidden = false;
 
-			},1000)	
+			},1400)	
 		}
 
-		 timer = setInterval((formatTime),1000)
-			
+			 timer = setInterval((formatTime),1000);
+
 			document.getElementById('start').addEventListener('click',resume);
 			pause.addEventListener('click', pauseGame);
 			restart.addEventListener('click',resetGame);
@@ -105,6 +105,7 @@ async function startGame(){
 		return Err;
 	}
 }
+	
 
 function changeCircleColor(timeLeft) {
 	const { alert, warning, info } = COLOR_CODES;
@@ -247,6 +248,7 @@ function pauseGame() {
 
 function resume() {
 	document.getElementById('start').hidden = false;
+
 }
 
 function resetGame(){

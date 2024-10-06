@@ -81,7 +81,7 @@ form :hover{
 }
 .button{
     font-family: fantasy;
-    border: 1px solid rgb(252, 4, 4);
+    border: 5px solid rgb(0, 0, 0);
     border-radius: 20px;
     color: rgb(255, 255, 255);
     background-color: rgb(255, 0, 0);
@@ -91,6 +91,12 @@ form :hover{
    
 }
 
+.button:active {
+  background-color: red;
+  box-shadow: 0 5px black;
+  transform: translateY(1px);
+}
+
 .restart :hover{
   display: flex;
   justify-content: flex-end;
@@ -98,16 +104,24 @@ form :hover{
   transform: scale(1.2)
 }
 
+
 #resetButton {
   font-family: fantasy;
   float: right;
-  border: 1px solid rgb(255, 0, 0);
+  border: 5px solid black;
   border-radius: 20px;
   color: rgb(254, 253, 253);
   background-color: rgb(255, 0, 0);
   font-size: 40px;
   cursor: pointer;
 }
+
+#resetButton:active {
+  background-color: red;
+  box-shadow: 0 5px black;
+  transform: translateY(1px);
+}
+
 
 #memory{
   font-family: fantasy;
