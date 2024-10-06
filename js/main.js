@@ -116,7 +116,6 @@ function changeCircleColor(timeLeft) {
 	} else if(timeLeft <= warning.threshold) {
 			
 		document.getElementById("base-timer-path-remaining").classList.remove(info.color);
-
 		document.getElementById("base-timer-path-remaining").classList.add(warning.color);
 
 		clock.style.color = warning.color;
@@ -234,7 +233,6 @@ function cardValue(val) {
 	}
 }
 	
-
 function pauseGame() {
 	clearInterval(timer);
 } 
