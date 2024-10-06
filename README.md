@@ -18,5 +18,5 @@
 
 <div id="header">
  <h1 class="heading-element" dir="auto">Lessons Learned:</h1>
-  
+  I've learned when creating a timer use setInterval to repeat function continously. I've also learned to eliminate uneccessay if...else statements by implemententing a switch statement.
 </div>
