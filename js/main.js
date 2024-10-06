@@ -40,7 +40,6 @@ const COLOR_CODES = {
 };
 let remainingPathColor = COLOR_CODES.info.color;
 
-
 document.getElementById('start').addEventListener('click', startGame);
 async function shuffledDeck(){
 	
@@ -53,9 +52,6 @@ async function shuffledDeck(){
 	}
 }
 shuffledDeck()
-// "vrww9w6v6612" deckId
-
-
 
 async function startGame(){
 
@@ -94,10 +90,9 @@ async function startGame(){
 
 			},1400)	
 		}
-
 			 timer = setInterval((formatTime),1000);
 
-			document.getElementById('start').addEventListener('click',resume);
+			document.getElementById('start').addEventListener('click',resumeGame);
 			pause.addEventListener('click', pauseGame);
 			restart.addEventListener('click',resetGame);
 			
@@ -200,9 +195,7 @@ function update(){
 	if(Number(cardValue(card1.value)) === Number(cardValue(card2.value)) && timeLeft !== -1){
 		
 		gameScore.innerText = `Score: ${score += 10}`;
-		card1.style.display = 'none';
-		card2.style.display = 'none';
-		
+	
 	}else{
 		card1.src = `https://www.deckofcardsapi.com/static/img/back.png`;
 		card2.src = `https://www.deckofcardsapi.com/static/img/back.png`;
@@ -210,7 +203,7 @@ function update(){
 
 	if(score === 260){
 		clearInterval(timer);
-		result.innerText = `WINNER WINNER CHICKEN DINNER!!`;
+		result.innerText = `WINNER WINNER CHICKEN DINNER!`;
 		result.style.color = 'red';
 		document.getElementById('start').hidden = true;
 		pause.hidden = true;
@@ -246,13 +239,12 @@ function pauseGame() {
 	clearInterval(timer);
 } 
 
-function resume() {
+function resumeGame() {
 	document.getElementById('start').hidden = false;
 
 }
 
 function resetGame(){
-	location.reload();
-	
+	location.reload();	
 }
 

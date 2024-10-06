@@ -44,9 +44,9 @@ form{
 #result {
   display: flex;
   justify-content: center;
-  color: rgb(6, 0, 0);
+  color: white;
   font-family: fantasy;
-  font-size: 40px;
+  font-size: 80px;
   animation: bounce .6s;
   animation-direction: normal;
   animation-iteration-count: infinite;
