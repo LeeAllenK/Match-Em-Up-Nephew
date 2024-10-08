@@ -4,6 +4,11 @@
  Inspired by my nephew Eli test your memory in a popular card matching game. Using a standard deck of 52 cards match all similar card values before time runs out. Can you 'Match Em Up Nephew'?
 
 </div>
+<div id="header" >
+ <h1  class="heading-element" dir="auto">My Notes</h1>
+ <img src="https://i.imgur.com/FQe8Rem.gif" alt="My Notes">
+  Need a little extra help with remembering task throughout your busy day. This note application allows users input their task and add them to a list. Don't worry if you no longer need that task the users can utilize the edit and delete options available.
+</div>
 
 <div id="header" >
  <h1 class="heading-element" dir="auto">How It's Made:</h1>
