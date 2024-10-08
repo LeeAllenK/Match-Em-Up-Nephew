@@ -256,3 +256,73 @@ img {
   width: 75px;
 }
 
+.homeBack {
+display: flex;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 19%;
+}
+
+.classHome {
+  display: flex;
+  font-size: 10px;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+/* img {
+  height: 150px;
+  width: 150px;
+} */
+
+.buttonG {
+  /* text-align: center; */
+  border-radius: 40px;
+  font-size: 100px;
+  color: red;
+  background-color: black;
+  box-shadow: 0 9px red;
+  cursor: pointer;
+}
+
+.buttonG:active {
+  transform: translateY(3px)
+}
+
+
+.buttonG:hover {
+  animation-direction: normal;
+  animation-iteration-count: 2;
+  opacity: .79;
+  animation: name 4s infinite;
+}
+
+@keyframes name {
+  50% {
+    color: rgb(252, 251, 251);
+  }
+
+  100% {
+    color: rgb(255, 0, 0);
+  }
+
+}
+
+.buttonG{
+  animation: bounce .6s;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+  opacity: 1;
+
+}
+
+@keyframes bounce {
+  from {
+    translate: 0px 10px 0px
+  }
+
+  to {
+    translate: 0px 30px 0px
+  }
+}

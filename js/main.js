@@ -40,6 +40,17 @@ const COLOR_CODES = {
 };
 let remainingPathColor = COLOR_CODES.info.color;
 
+let game = document.querySelector('.Game')
+game.style.display = 'none'
+
+let startBtn = document.querySelector('.buttonG')
+startBtn.addEventListener('click' , (e) => {
+		document.querySelector('.homeBack').style.display = 'none'
+		startBtn.style.display = 'none';
+		game.style.display = 'block';
+		startGame()
+		
+	})
 async function shuffledDeck(){
 	
 	try {
@@ -85,6 +96,9 @@ async function startGame(){
 				document.querySelector('.base-timer').removeAttribute('hidden');
 				document.querySelector('button').hidden = false;
 
+				if(game.style.display === 'none'){
+					li.style.display = 'none'
+				}
 			},1400)	
 		}
 			 timer = setInterval((formatTime),1000);
@@ -96,10 +110,7 @@ async function startGame(){
 	} catch(Err) {
 		return Err;
 	}
-}
-startGame()
-
-	
+}	
 
 function changeCircleColor(timeLeft) {
 	const { alert, warning, info } = COLOR_CODES;
