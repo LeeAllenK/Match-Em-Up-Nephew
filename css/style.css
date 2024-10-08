@@ -309,20 +309,3 @@ display: flex;
 
 }
 
-.buttonG{
-  animation: bounce .6s;
-  animation-direction: normal;
-  animation-iteration-count: infinite;
-  opacity: 1;
-
-}
-
-@keyframes bounce {
-  from {
-    translate: 0px 10px 0px
-  }
-
-  to {
-    translate: 0px 30px 0px
-  }
-}
