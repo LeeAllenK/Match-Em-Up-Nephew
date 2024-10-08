@@ -1,6 +1,6 @@
 <div id="header" >
  <h1  class="heading-element" dir="auto">Match Em Up Nephew <a href="https://fladev-match-em-up-nephew.netlify.app/">Play Here</a></h1>
- <img class="imgMatch" src="<img class="imgMatch" src="images/match-em-up-nephew.gif" alt="match em up nephew">
+ <img class="imgMatch" src="images/match-em-up-nephew.gif" alt="match em up nephew">
  Inspired by my nephew Eli test your memory in a popular card matching game. Using a standard deck of 52 cards match all similar card values before time runs out. Can you 'Match Em Up Nephew'?
 
 </div>
