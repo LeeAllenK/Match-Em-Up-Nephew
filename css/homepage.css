@@ -1,0 +1,54 @@
+
+.homeBack{
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+ul{
+	display: flex;
+	font-size: 10px;
+	flex-wrap: wrap;
+	list-style: none;
+}
+
+img{
+	height: 150px;
+	width: 150px;
+}
+
+.button{
+	display:flex; 
+	border: 2px solid black;
+	border-radius: 40px;
+	font-size: 100px;
+	color: red;
+	background-color: black;
+	box-shadow: 0 9px red;
+}
+
+.button:active{
+	transform: translateY(3px)
+}
+
+
+.button:hover {
+	animation-direction: normal;
+	animation-iteration-count: 2;
+	opacity: .79;
+	animation: name 4s infinite;
+}
+
+@keyframes name {
+	50% {
+		color: rgb(252, 251, 251);
+	}
+	100% {
+		color: rgb(255, 0, 0);
+	}
+
+}
+.btnBorder{
+	display: flex;
+	justify-content: center;
+	margin: 220px;
+}

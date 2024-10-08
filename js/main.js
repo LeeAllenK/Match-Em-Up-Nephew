@@ -1,4 +1,4 @@
-document.getElementById('start').hidden = false;
+
 const memory = document.getElementById('memory');
 const clock = document.getElementById('timer');
 const result = document.getElementById('result');
@@ -40,7 +40,6 @@ const COLOR_CODES = {
 };
 let remainingPathColor = COLOR_CODES.info.color;
 
-document.getElementById('start').addEventListener('click', startGame);
 async function shuffledDeck(){
 	
 	try {
@@ -54,8 +53,6 @@ async function shuffledDeck(){
 shuffledDeck()
 
 async function startGame(){
-
-	document.getElementById('start').hidden = true;
 
 	const url = await fetch(`https://www.deckofcardsapi.com/api/deck/vrww9w6v6612/draw/?count=52`);
 		try {
@@ -100,6 +97,8 @@ async function startGame(){
 		return Err;
 	}
 }
+startGame()
+
 	
 
 function changeCircleColor(timeLeft) {
@@ -238,7 +237,7 @@ function pauseGame() {
 } 
 
 function resumeGame() {
-	document.getElementById('start').hidden = false;
+	timer = setInterval((formatTime), 1000)
 
 }
 
