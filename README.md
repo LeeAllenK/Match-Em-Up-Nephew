@@ -1,9 +1,9 @@
 <div id="header" >
- <h1  class="heading-element" dir="auto">Match Em Up Nephew <a href="https://fladev-match-em-up-nephew.netlify.app/">Play Here</a></h1>
+ <h1  class="heading-element" dir="auto">Match Em Up Nephew </h1>
  Inspired by my nephew Eli test your memory in a popular card matching game. Using a standard deck of 52 cards match all similar card values before time runs out. Can you 'Match Em Up Nephew'?
-
 </div>
 
+   <img src="https://i.imgur.com/9qkuFMi.gif" alt="gif not available">
 <div id="header" >
  <h1 class="heading-element" dir="auto">How It's Made:</h1>
  Tech used: HTML, CSS, JavaScript <br/><br/>
