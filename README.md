@@ -3,7 +3,7 @@
  <img src="https://i.imgur.com/2HBGPbB.gif" alt="Match Em Up Nephew">
  Inspired by my nephew Eli test your memory in a popular card matching game. Using a standard deck of 52 cards match all similar card values before time runs out. Can you 'Match Em Up Nephew'?
 </div>
-![Uploading msedge_rdutxFlST3.gif…]()
+
 
    <img src="https://i.imgur.com/9qkuFMi.gif" alt="gif not available">
 <div id="header" >
