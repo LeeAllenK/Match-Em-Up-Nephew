@@ -1,5 +1,6 @@
 body{
 margin: 0;
+
 }
 
 .items{
@@ -271,13 +272,10 @@ display: flex;
   list-style: none;
 }
 
-/* img {
-  height: 150px;
-  width: 150px;
-} */
+
 
 .buttonG {
-  /* text-align: center; */
+
   border-radius: 40px;
   font-size: 100px;
   color: red;
@@ -287,25 +285,11 @@ display: flex;
 }
 
 .buttonG:active {
-  transform: translateY(3px)
+  transform: translateY(7px)
 }
 
 
 .buttonG:hover {
-  animation-direction: normal;
-  animation-iteration-count: 2;
-  opacity: .79;
-  animation: name 4s infinite;
-}
-
-@keyframes name {
-  50% {
-    color: rgb(252, 251, 251);
-  }
-
-  100% {
-    color: rgb(255, 0, 0);
-  }
-
+  color: white
 }
 
